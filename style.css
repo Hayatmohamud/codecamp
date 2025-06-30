@@ -1,0 +1,175 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+    font-family: "Inter", sans-serif;
+    line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Header Styling */
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color:#00b4db;
+  color: white;
+  padding: 10px 20px;
+}
+
+header .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-left: -400px;
+}
+
+header .logo span {
+  color: #4CAF50; /* Green color for the "Camp" part */
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Mobile Menu Styling */
+.mobile-menu {
+  display: flex;
+}
+
+.mobile-menu ul {
+  display: flex;
+  list-style: none;
+}
+
+.mobile-menu ul li {
+  margin-right:100px;
+}
+
+.mobile-menu ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.mobile-menu ul li a:hover {
+  color: green;
+}
+
+.hero {
+  background: linear-gradient(to right, #00b4db, #0083b0);
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #fff;
+  color: #0083b0;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.features {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.feature-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: 250px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.resources {
+  background-color: #e6f7ff;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.resources ul {
+  list-style: none;
+  padding: 1rem 0;
+}
+
+.resources li {
+  margin: 0.5rem 0;
+}
+
+.resources a {
+  color: #0083b0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer {
+  background-color:#00b4db;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .mobile-menu {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #333;
+    text-align: center;
+  }
+
+  .mobile-menu.active {
+    display: block;
+  }
+
+  .mobile-menu ul {
+    flex-direction: column;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+}

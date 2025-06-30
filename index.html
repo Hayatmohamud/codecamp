@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>codecamp</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Comfortaa:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 class="logo">Code<span>Camp</span></h1>
+    <button class="hamburger-menu">
+  ☰
+</button>
+<nav class="mobile-menu">
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#features">features</a></li>
+    <li><a href="#resourse">resource</a></li>
+  </ul>
+</nav>
+  </header>
+  <!-- Hero section -->
+  <section class="hero" id="home">
+    <h1>Welcome to WebDev Journey</h1>
+    <p>Learn HTML, CSS, and JavaScript by building projects</p>
+    <a href="#resources" class="btn">Start Learning</a>
+  </section>
+  <!-- features -->
+    <section class="features" id="features">
+    <h2>What You'll Learn</h2>
+    <div class="feature-cards">
+      <div class="card">
+        <h3>HTML</h3>
+        <p>Structure your web pages using semantic HTML5.</p>
+      </div>
+      <div class="card">
+        <h3>CSS</h3>
+        <p>Style beautifully with Flexbox, Grid, and animations.</p>
+      </div>
+      <div class="card">
+        <h3>JavaScript</h3>
+        <p>Add interactivity and dynamic behavior to your site.</p>
+      </div>
+    </div>
+  </section>
+  <!-- resoursce -->
+     <section id="resourse" class="resources">
+    <h2>Top Free Learning Resources</h2>
+    <ul>
+      <li><a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a></li>
+      <li><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs</a></li>
+      <li><a href="https://www.theodinproject.com/" target="_blank">The Odin Project</a></li>
+      <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+    </ul>
+  </section>
+  <!-- footer -->
+  <footer>
+    <p>&copy; 2025 WebDev Journey. Built for learning.</p>
+  </footer>
+  <!-- jscript -->
+   <script>
+    const hamburger = document.querySelector('.hamburger-menu');
+const mobileMenu = document.querySelector('.mobile-menu');
+
+hamburger.addEventListener('click', () => {
+  mobileMenu.classList.toggle('active');
+});
+   </script>
+</body>
+</html>

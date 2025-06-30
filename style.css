@@ -153,14 +153,22 @@ footer {
 @media (max-width: 768px) {
   .mobile-menu {
     display: none;
-    width: 100%;
+    flex-direction: column;
     position: absolute;
-    top: 60px;
-    left: 0;
-    background-color: #333;
+    left: 0%;
+    top: 50px;
+    width: 100%;
+    padding: 20px 0;
     text-align: center;
+    justify-content: center;
+    z-index: 2;
+    background-color: #00b4db;
   }
-
+    header .logo{
+    top: 15px;
+    /* left:100%; */
+    margin: 0 auto;
+   }
   .mobile-menu.active {
     display: block;
   }
@@ -168,8 +176,17 @@ footer {
   .mobile-menu ul {
     flex-direction: column;
   }
+  .mobile-menu li{
+    top: 15px;
+    left:5%;
+    margin: 0 100px;
+  }
 
   .hamburger-menu {
     display: block;
+    position: absolute;
+    top: 15px;
+    right: 5%;
+    cursor: pointer;
   }
 }

@@ -43,7 +43,7 @@ header .logo span {
 /* Hamburger Menu */
 .hamburger-menu {
   display: none;
-  font-size: 2rem;
+  font-size: 30px;
   background: none;
   border: none;
   color: white;
@@ -188,5 +188,42 @@ footer {
     top: 15px;
     right: 5%;
     cursor: pointer;
+  }
+}
+@media (max-width: 1024px) {
+  .hamburger-menu{
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 5%;
+    cursor: pointer;
+  }
+  .mobile-menu{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    left: 0%;
+    top: 50px;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    justify-content: center;
+    z-index: 2;
+     background-color: #00b4db;
+  }
+   .mobile-menu.active {
+    display: block;
+  }
+  header .logo{
+     left: 5%;
+    margin: auto;
+  }
+  .mobile-menu ul {
+    flex-direction: column;
+  }
+  .mobile-menu li{
+    top: 15px;
+    left:5%;
+    margin: 0 100px;
   }
 }
